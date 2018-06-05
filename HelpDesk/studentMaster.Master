@@ -1,0 +1,91 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="studentMaster.master.cs" Inherits="HelpDesk.studentMaster" %>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+</head>
+<body style="background-color:ivory;">
+    <form id="form1" runat="server">
+        <table width="100%">
+        <tr align="center">
+                
+                    <td align="center" colspan="2" style="z-index: 100; left: 0px; vertical-align: text-bottom; font-size:x-large;
+                                line-height: normal; letter-spacing: normal; background-color:Maroon; color:White;
+                                text-align: center; text-decoration: underline; border-left-color: #000000; border-bottom-color: #000000; border-top-style: solid; border-top-color: #000000; border-right-style: solid; border-left-style: solid; border-right-color: #000000; border-bottom-style: solid; height: 40px;"> U.V.C.E College's Help Desk
+                                
+                         
+                    </td>
+               </tr>
+        
+            <tr align="center">
+            
+                 <td align="center"  style="text-decoration:underline; width:100%; font-family:Segoe UI; font-weight:bolder; font-size:x-large; vertical-align:middle; color:Navy; text-align: center; height: 63px;">
+                       
+                       THE STUDENT PAGE OF U.V.C.E HELP DESK <br />
+                  
+                 </td>
+                 
+                 <%--<td style="height: 63px">
+                        <asp:ImageButton ID="ImageButton2" ImageAlign="Right" Width="80" Height="100" ImageUrl="~/images/pics/uvce.jpg" runat="server" />
+                 </td>--%>
+               
+            </tr>
+            <tr>
+               
+            </tr>
+            
+          
+            
+            
+            
+            <tr>
+            <td>
+            <asp:Menu Visible="true" ID="studentMenu" BorderWidth="2" BackColor="#330033" ForeColor="#ffffff"  Font-Underline="true" Font-Size="Large" Orientation="Horizontal" Width="100%" Height="40px" runat="server">
+            
+            <items>
+            
+            
+                  <asp:MenuItem Text="My Answered Requests" Value="My Request" NavigateUrl="~/myQueries.aspx"></asp:MenuItem>
+                  <asp:MenuItem Text="My UnAnswered Requests" Value="My UnAnswered Requests" NavigateUrl="~/myUnsolvedQueries.aspx"></asp:MenuItem>
+                  <asp:MenuItem Text="Change Password"  Value="Change Password" NavigateUrl="~/changePassword.aspx"></asp:MenuItem>
+                  <asp:MenuItem Text="Feedback" Value="Feedback" NavigateUrl="~/Feedback.aspx"></asp:MenuItem>
+                  
+                  <asp:MenuItem Text="Make a Request" Value="Make a Request" NavigateUrl="~/newRequest.aspx" ></asp:MenuItem>
+                   <asp:MenuItem Text="Log Out" Value="Log Out" NavigateUrl="~/logOut.aspx" ></asp:MenuItem>  
+                  
+            </items>
+            
+            </asp:Menu>
+                    
+               
+                    
+            </td>  
+            </tr>
+            
+            
+            <tr>
+                <td>
+                 <asp:ImageButton ID="ImageButton1" ImageAlign="Right" Width="80" Height="100" ImageUrl="~/images/pics/uvce.jpg" runat="server" />
+     
+                </td>
+                
+            </tr>
+            
+            <tr>
+            
+                    
+            </tr>
+            
+        </table>
+        
+    
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+        </asp:contentplaceholder>
+    
+    </form>
+</body>
+</html>
+

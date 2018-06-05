@@ -1,0 +1,117 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="adminMaster.master.cs" Inherits="HelpDesk.adminMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="background-color:ivory">
+    <form id="form1" runat="server">
+   
+        <table  width="100%" >
+        <tr align="center">
+                
+                    <td align="center" style="z-index: 100; left: 0px; vertical-align: middle; font-size:xx-large;
+                                line-height: normal; letter-spacing: normal; background-color:Maroon; color:White;
+                                text-align: center; text-decoration: underline; border-left-color:Maroon; border-bottom-color:Maroon; border-top-style: solid; border-top-color:Maroon; border-right-style: solid; border-left-style: solid; border-right-color: Maroon; border-bottom-style: solid; height: 40px;"> U.V.C.E College's Help Desk For Administrator
+                            
+                    </td>
+         </tr>
+        
+            
+            
+           
+          <tr>
+            <td align="center" >
+            <asp:Menu ID="AdminMenu" BorderWidth="2" BackColor="#330033" ForeColor="#ffffff"  Font-Underline="true" Font-Size="Medium" Orientation="Horizontal" Width="100%" Height="40px" runat="server">
+            
+            <items>
+            
+            
+                  <asp:MenuItem Text="Create Assignee"  Value="Create New Assignee" NavigateUrl="~/createAssignee.aspx"></asp:MenuItem>
+                  <asp:MenuItem Text="Change Password"  Value="Change Password" NavigateUrl="~/changePswdAdmin.aspx"></asp:MenuItem>
+                  <asp:MenuItem Text="New Request Arrived" Value="New Request Arrived" NavigateUrl="~/requestArrivedForAdmin.aspx"></asp:MenuItem>
+                  <asp:MenuItem Text="Request For ForgotPassword" Value="Request For Forgot Password" NavigateUrl="~/reqForpswd.aspx"></asp:MenuItem>
+                  <asp:MenuItem Text="Assignee: Request For Forgot Password" Value="Assignee : Request For Forgot Password" NavigateUrl="~/reqForPwdAssignee.aspx"></asp:MenuItem> 
+                    <asp:MenuItem Text="Processed Request" Value="Processed Request" NavigateUrl="~/processedQuery.aspx" ></asp:MenuItem>
+                 
+                 
+                  <asp:MenuItem Text="Log Out" Value="Log Out" NavigateUrl="~/logOut.aspx" ></asp:MenuItem>
+                
+            </items>
+            
+            </asp:Menu>
+            </td>
+                  
+                
+            
+            
+            </tr>
+             <tr >
+            <td>
+            <asp:Menu ID="Menu1" BorderWidth="1" BackColor=Ivory ForeColor="#cc3366" Font-Bold="true"  Font-Underline="true" Font-Size="14pt" Orientation="horizontal" Width="100%" Height="40px" runat="server">
+            
+            <items>
+            
+            
+                  <asp:MenuItem Text="See-All-Existing-User's"  Value="SEE ALL USER'S" NavigateUrl="~/AllUsers.aspx"></asp:MenuItem>
+                  <asp:MenuItem Text="See All Assignee's"  Value="See Assignee's" NavigateUrl="~/seeAssignee.aspx"></asp:MenuItem>
+                  <asp:MenuItem Text="Add A New Category For Request" Value="Add New Category" NavigateUrl="~/addCategory.aspx"></asp:MenuItem>
+                  <asp:MenuItem Text="Add A New Department" Value="Add New Department" NavigateUrl="~/addDepartment.aspx"></asp:MenuItem>
+                  <asp:MenuItem Text="View User FeedBack" Value="View User FeedBaack" NavigateUrl="~/feedbackForm.aspx"></asp:MenuItem>
+                  
+                 
+                  
+            </items>
+            
+            </asp:Menu>
+            
+            </td>
+                             
+           </tr>
+           <tr align="center">
+            <td>
+         
+                                 
+               <asp:Image ID="logo" runat="server" Width="80" Height="100" ImageAlign="Right" ImageUrl="~/images/pics/uvce.jpg" />
+                
+                        
+                </td>
+                     
+               
+            </tr>
+            
+           <%-- <tr>
+                    <td align="left" style="font-size:12pt; font-family:Lucida Handwriting; font-weight:bold;">
+                            <asp:ImageButton ID="ImageButton2" ImageAlign="Right" Width="80" Height="100" ImageUrl="~/images/pics/logo1.jpg" runat="server" />
+                             <asp:HyperLink ID="hypUser" runat="server" ForeColor="BlueViolet" Font-Bold="true"  Font-Underline="true" NavigateUrl="~/AllUsers.aspx">SEE-ALL-EXISTING-USERS   ,</asp:HyperLink>
+                     <br />
+                     <br />
+                     
+                
+                     <asp:HyperLink ID="hypAssignee" runat="server" ForeColor="blueViolet" Font-Bold="true"  Font-Underline="true" NavigateUrl="~/seeAssignee.aspx">SEE-ALL-EXISTING- ASSIGNEE'S </asp:HyperLink>
+                     <br />
+                     <asp:HyperLink ID="hyNewCategory" runat="server" ForeColor="blueViolet" Font-Bold="true"  Font-Underline="true" NavigateUrl="~/addCategory.aspx">Add Category For Request</asp:HyperLink>
+                      <br />
+                      <asp:HyperLink ID="hyNewDepartment" runat="server" ForeColor="blueViolet" Font-Bold="true"  Font-Underline="true" NavigateUrl="~/addDepartment.aspx">Add New Department</asp:HyperLink>  
+                   </td>
+                   
+             </tr>--%>
+             
+             
+            
+        </table>
+        
+        
+        
+        
+        
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+        </asp:contentplaceholder>
+    
+    </form>
+</body>
+</html>

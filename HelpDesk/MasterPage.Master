@@ -1,0 +1,117 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="HelpDesk.MasterPage" %>
+
+<!DOCTYPE html>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <title>Untitled Page</title>
+    <style type="text/css">
+        .auto-style1 {
+            height: 118px;
+        }
+    </style>
+</head>
+<body style="background-color:ivory;">
+    <form id="form1" runat="server">
+    
+            <table width="100%">
+                <tr align="center">
+                
+                    <td align="center" style="z-index: 100; left: 0px; vertical-align: middle; font-size:xx-large;
+                                line-height: normal; letter-spacing: normal; background-color:Maroon; color:#ffffff;
+                                text-align: center; text-decoration: underline; border-left-color:Maroon; border-bottom-color:Maroon; border-top-style: solid; border-top-color:Maroon; border-right-style: solid; border-left-style: solid; border-right-color:Maroon; border-bottom-style: solid; height: 45px;"> U.V.C.E College's Help Desk
+                            
+                    </td>
+               </tr>
+               
+               <tr>
+               <td class="auto-style1">
+       <asp:Menu ID="mainMenu" runat="server" Font-Size="Larger" CssClass="mastermenu" Orientation="Horizontal">
+<StaticSelectedStyle BackColor="LightBlue" BorderStyle="Solid" BorderColor="Black"
+    BorderWidth="1px" />
+	<Items>
+	    <asp:menuitem navigateurl="~/aboutUs.aspx" 
+            text="Home |"
+            tooltip="Home">      
+       </asp:menuitem>
+	    <asp:MenuItem   Text="LOGIN |" Value="LOGIN " NavigateUrl="~/login.aspx">
+                                            
+                                 </asp:MenuItem>
+                                 
+                                 <asp:MenuItem Text="CREATE NEW ACCOUNT |"  Value="CREATE NEW ACCOUNT" NavigateUrl="~/createNewAccount.aspx">       
+                                            
+                                                                  
+                                 </asp:MenuItem>
+                           <asp:MenuItem Text="REQUEST |" Value="REQUEST" NavigateUrl="~/loginForRequest.aspx" >
+                                              
+                                  </asp:MenuItem> 
+                                 
+                                 
+                                 <asp:MenuItem Text="FAQ |"  NavigateUrl="~/FAQ.aspx" Value="FAQ'S" ></asp:MenuItem>
+                                  
+                                              
+                                 <asp:MenuItem Text="PICTURE GALLERY |"  Value="PICTURE GALLERY" NavigateUrl="~/pictureGallery.aspx"></asp:MenuItem>
+                                 
+                                 
+                                 <asp:MenuItem NavigateUrl= "~/contactMe.aspx" Text="CONTACT US " Value="CONTACT US">
+                                       <%-- <asp:MenuItem  Text="FeedBack" NavigateUrl="~/feedback.aspx" Value="FeedBack"></asp:MenuItem> --%>
+                                 </asp:MenuItem>
+	</Items>
+	<StaticMenuItemStyle ItemSpacing="10px" />
+</asp:Menu>
+                        </td>
+        
+                    </tr>
+                    
+                                    
+                    
+                    <tr>
+                    
+                    <td style="background-color:ivory;">
+                                <%--<asp:ImageButton ID="ImageButton1"  ImageAlign="Right" Width="80" Height="100" ImageUrl="~/images/pics/logo1.jpg" runat="server"/>--%>
+                                <asp:ImageButton ID="ImageButton2"  ImageAlign="Right" Width="175px" Height="150px" ImageUrl="~/images/pics/uvce.jpg" runat="server"/>
+                    
+                    </td>
+                    
+                   
+                    </tr>
+                    
+                    <tr>
+                            <td>
+                   
+                                     <asp:contentplaceholder id="ContentPlaceHolder1" runat="server"></asp:contentplaceholder>
+                            </td>
+                   </tr>
+                   <tr>
+                   <td align="center" style="text-decoration:underline; color:Green; font-weight:bold; font-size:12pt; font-family:Lucida Calligraphy; background-color: ivory;">
+                   
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            
+                           Project By: 
+                            <br />
+                            <br />
+                            <marquee  behavior="alternate">
+                            MD Rayyan Ali 
+                            Mohammed Sohail Ahmed Khan
+
+                            </marquee>
+                    </td>
+                  
+                   </tr>
+               
+                                                                 
+         </table>
+         
+         
+    </form>
+    
+     </body>
+     
+ </html>   

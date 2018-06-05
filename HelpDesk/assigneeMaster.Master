@@ -1,0 +1,66 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="assigneeMaster.master.cs" Inherits="HelpDesk.assigneeMaster" %>
+
+<!DOCTYPE html>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+</head>
+<body style="background-color:ivory;">
+    <form id="form1" runat="server">
+    <div style="background-color: ivory">
+    <table width="100%">
+    <tr align="center">
+                
+                    <td colspan="2" align="center" style="z-index: 100; left: 0px; vertical-align: middle; font-size:xx-large;
+                                line-height: normal; letter-spacing: normal; background-color:Maroon; color:White;
+                                text-align: center; text-decoration: underline; border-left-color:Maroon; border-bottom-color:Maroon; border-top-style: solid; border-top-color:Maroon; border-right-style: solid; border-left-style: solid; border-right-color: Maroon; border-bottom-style: solid; height: 40px;"> U.V.C.E College's Help Desk For Assignee
+                            
+                   
+                    </td>
+         </tr>
+        
+            
+           
+            
+          
+            
+            
+            
+            <tr>
+            <td>
+            <asp:Menu ID="assigneeMenu" BorderWidth="2" BackColor="red" ForeColor="#ffffff"  Font-Underline="true" Font-Size="Large" Orientation="Horizontal" Width="100%" Height="40px" runat="server" style="background-color: #cc0000">
+            
+            <items>
+            
+            
+                 
+                  <asp:MenuItem Text="Change Password"  Value="Change Password" NavigateUrl="~/changePswdAssignee.aspx"></asp:MenuItem>
+                  <asp:MenuItem Text="New Request Arrived" Value="New Request Arrived" NavigateUrl="~/requestArrivedForAssignee.aspx"></asp:MenuItem>
+                  
+                 <asp:MenuItem Text="Log Out" Value="Log Out" NavigateUrl="~/logOut.aspx" ></asp:MenuItem>
+                 
+                  
+            </items>
+            
+            </asp:Menu>
+                    
+            
+                       <asp:Image ID="logo" ImageAlign="Right" Width="80" Height="100" ImageUrl="~/images/pics/uvce.jpg" runat="server" />
+            </td>
+            
+            </tr>
+            
+            
+            
+        </table>
+        
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+        </asp:contentplaceholder>
+    </div>
+    </form>
+</body>
+</html>
+
